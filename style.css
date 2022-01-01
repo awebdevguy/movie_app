@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+:root {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: var(--secondary-color);
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: 0.9;
+}
+
+header #content-title {
+  color: #fff;
+  align-self: center;
+  justify-self: center;
+}
+
+i.menu-bars {
+  font-size: 2rem;
+  align-self: center;
+  color: #fff;
+}
+
+form {
+  align-self: center;
+}
+
+.search {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.search:focus {
+  outline: none;
+  background-color: var(--primary-color);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+.movie-info h3 {
+  width: 80%;
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: .25rem .5rem;
+  border-radius: 3px;
+  font-weight: bold;
+  width: 2.5rem;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+
+.movie-info span.orange {
+  color: orange;
+}
+
+.movie-info span.red {
+  color: red;
+}
+
+.overview {
+  background-color: #fff;
+  padding: 0 1rem 1rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in;
+  overflow: scroll;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+footer h6 {
+  background-color: #000;
+  line-height: 2em;
+  font-size: 1rem;
+  position: static;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+mark.red {
+  color:red;
+  background: none;
+}
+
+mark.white {
+  color:#fff;
+  background: none;
+}
+
+mark.green {
+  color: green;
+  background: none;
+}
+
+#version {
+position: absolute;
+right: 1rem;
+}
